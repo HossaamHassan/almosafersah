@@ -147,6 +147,9 @@ p {
   background-color: var(--second-color);
   height: 100vh;
 }
+.login .pic-sign {
+  height: 100% !important;
+}
 @media (max-width: 992px) {
   .login .pic {
     display: none !important;
@@ -168,8 +171,7 @@ p {
   }
 }
 .form-container form input:not(:last-child) {
-  height: 58px !important;
-  background: #fff !important;
+  height: 58px;
   color: #000 !important;
   font-size: 18px;
   border-radius: 0px;
@@ -177,6 +179,9 @@ p {
   font-size: 15px;
   box-shadow: -1px 1px 2px 0px rgb(0 0 0 / 8%);
   -webkit-box-shadow: -1px 1px 2px 0px rgb(0 0 0 / 8%);
+}
+.form-container .radio-ch {
+  height: 16px !important;
 }
 .form-container form textarea {
   background: #fff !important;
@@ -213,5 +218,11 @@ p {
 .form-container .facebook:focus-visible,
 .form-container .facebook:active {
   color: white;
+}
+.form-container .new {
+  text-decoration: none;
+}
+.form-container .new:hover {
+  text-decoration: underline;
 }
 /* End Login */

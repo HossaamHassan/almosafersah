@@ -15,24 +15,31 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Login | Almosafersah</title>
+    <title>Signup | Almosafersah</title>
   </head>
   <body>
     <div class="login overflow-hidden">
       <div class="row">
         <div class="col-lg-6">
-          <div class="form-container pt-3">
+          <div class="form-container pt-3 pb-5">
             <div class="container">
               <form action="/" class="contact-form pt-3">
                 <div class="sm-pic m-auto">
                   <img src="../img/logo.png" alt="" class="mw-100" />
                 </div>
-                <h4 class="text-center mb-3">Login to Almosafersah</h4>
+                <h4 class="text-center mb-3">Register to Almosafersah</h4>
                 <input
-                  id="username"
+                  id="email"
                   class="form-control rounded"
                   type="text"
-                  placeholder="Username"
+                  placeholder="Email"
+                  required=""
+                /><br />
+                <input
+                  id="phone-number"
+                  class="form-control rounded"
+                  type="tel"
+                  placeholder="Phone Number"
                   required=""
                 /><br />
                 <input
@@ -43,21 +50,45 @@
                   id="password"
                   required=""
                 /><br />
-                <a
+                <input
+                  class="form-control rounded"
+                  type="password"
+                  placeholder="Confirm Password"
+                  name=""
+                  id="confirm-password"
+                  required=""
+                /><br />
+                <!-- <a
                   href="#"
                   class="d-flex align-items-center justify-content-end fw-bold new"
                   >Forgot Password?</a
-                >
+                > -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input radio-ch border border-black"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    By signing up you accept our
+                    <a href="#" class="text-primary"
+                      >terms of use and privacy policy</a
+                    >
+                  </label>
+                </div>
                 <br />
                 <input
                   id="contactButton"
                   class="btn mb-3 text-white w-100 fs-5 rounded"
                   type="submit"
-                  value="Login"
+                  value="Register"
                 />
                 <br />
                 <span class="fw-bold"
-                  >New User? <a href="../signup/" class="new">Sign Up</a></span
+                  ><a href="../login/" class="new"
+                    >I already have an Account</a
+                  ></span
                 >
                 <br />
                 <span class="d-flex align-items-center justify-content-center"
@@ -71,7 +102,7 @@
                     class="facebook py-2 btn w-75 bg-primary d-flex align-items-center justify-content-center gap-2"
                   >
                     <i class="fa-brands fa-facebook"></i>
-                    <span>Continue with facebook</span>
+                    <span>Signup with facebook</span>
                   </a>
                   <a
                     class="google py-2 btn w-75 bg-white border text-black d-flex align-items-center justify-content-center gap-2"
@@ -82,7 +113,7 @@
                       alt=""
                       class="mw-100"
                     />
-                    <span>Continue with facebook</span>
+                    <span>Signup with facebook</span>
                   </a>
                 </div>
               </form>
@@ -90,7 +121,9 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="pic d-flex align-items-center justify-content-center">
+          <div
+            class="pic pic-sign d-flex align-items-center justify-content-center"
+          >
             <img src="../img/logo.png" alt="" class="mw-100" />
           </div>
         </div>
