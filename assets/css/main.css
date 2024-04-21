@@ -583,6 +583,9 @@ article.on {
   border-radius: 50%;
   padding: 10px;
 }
+.book .box .info i:not(:last-child) {
+  color: var(--second-color);
+}
 .book .box .price,
 .all-trips .box .price {
   font-size: 14px;
@@ -595,7 +598,7 @@ article.on {
 }
 .book .box .pic,
 .all-trips .box .pic {
-  height: 250px;
+  height: 200px;
 }
 .book .box .pic img,
 .all-trips .box .pic img {

@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Select2 CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/js/select2.min.js"></script>
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -211,18 +220,13 @@
                     <i class="fa-solid fa-plane"></i>
                     <div class="d-flex flex-column gap-1">
                       <label for="from" class="form-label">Departure</label>
-                      <input
-                        list="brow"
-                        placeholder="Choose an Options"
-                        class="form-control"
-                      />
-                      <datalist id="brow">
-                        <option value="Internet Explorer"></option>
-                        <option value="Firefox"></option>
-                        <option value="Chrome"></option>
-                        <option value="Opera"></option>
-                        <option value="Safari"></option>
-                      </datalist>
+                      <select id="mySelect" style="width: 200px">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <!-- Add more options as needed -->
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -1633,6 +1637,12 @@
 
         $("article").removeClass("on");
         $("article").eq(i).addClass("on");
+      });
+    </script>
+    <script>
+      // Initialize Select2
+      $(document).ready(function () {
+        $("#mySelect").select2();
       });
     </script>
   </body>
